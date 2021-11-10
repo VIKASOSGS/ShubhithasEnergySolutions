@@ -853,7 +853,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/download.png") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -882,6 +882,70 @@ section {
   background: #47b2e4;
   border: 2px solid #47b2e4;
 }
+
+.cta .info {
+  
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+.cta .info i {
+  font-size: 20px;
+  color: #37517e;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.cta .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+.cta .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
+}
+.cta .info .email p {
+  padding-top: 5px;
+}
+.cta .info .social-links {
+  padding-left: 60px;
+}
+.cta .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.cta .info .social-links a:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+.cta .info .email:hover i, .cta .info .address:hover i, .cta .info .phone:hover i {
+  background: #47b2e4;
+  color: #fff;
+}
+
+
 @media (max-width: 1024px) {
   .cta {
     background-attachment: scroll;
@@ -1800,6 +1864,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.services2 {
+  background-color: #f3f5fa;
+}
 .services2 .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
@@ -1811,6 +1879,7 @@ section {
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  background-color: #ffffff;
 }
 .services2 .service-box .icon {
   font-size: 36px;
