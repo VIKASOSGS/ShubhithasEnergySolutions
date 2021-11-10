@@ -18,7 +18,10 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -30,12 +33,74 @@
 
   <style>
 
+.countdown {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown span {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    margin-left: 0.8rem;
+}
+
+.countdown span:first-of-type {
+    margin-left: 0;
+}
+
+.countdown-circles {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown-circles span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-circles span:first-of-type {
+    margin-left: 0;
+}
+
+
+.bg-gradient-3 {
+    background: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
 
   </style>
 
 </head>
 
 <body>
+
+  <div id="timerdiv" >
+
+  
+  <div class="rounded bg-gradient-3 text-white shadow p-5 text-center mb-5" style="height: 100vh;">
+    <div style="height: 100px;" ></div>
+
+      <h2 class="mb-0 font-weight-bold " style="letter-spacing: 1.2px;" >Inaugurating </h2>
+      <div style="height: 20px;" ></div>
+      <h4 class="mb-0 font-weight-bold " style="letter-spacing: 1.2px;" >Shubhitha S Energy Solutions </h4>
+      <div style="height: 20px;" ></div>
+
+      <h2 class="mb-0 font-weight-bold " style="letter-spacing: 1.2px;" >In</h2>
+      <div id="clock" class="countdown pt-4"></div>
+
+  </div>
+</div>
+
+
+<div id="maincontentsdiv">
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -83,9 +148,12 @@
 
   <main id="main">
 
-  
+
+          
+
+
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
+    <section id="counts" class="counts" >
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
@@ -135,7 +203,8 @@
 
       </div>
     </section><!-- End Counts Section -->
-          
+
+
           
         <!-- ======= Team Section ======= -->
         <section id="services" class="team2 ">
@@ -410,6 +479,10 @@
       </div>
     </section><!-- End Contact Section -->
 
+ 
+
+
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -488,6 +561,8 @@
   <a href="tel:+918555834486" class="whatsapp-float d-flex align-items-center justify-content-center"><i class="bi bi-telephone" ></i></a>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+</div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -501,6 +576,54 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+
+$(window).on('load', function(){
+var countDownDate = new Date("Nov 10, 2021 22:33").getTime();
+var now2 = new Date().getTime();
+
+var distance2 = countDownDate - now2;
+if (distance2 > 0) {
+  $('#maincontentsdiv').hide(); 
+}
+else{
+  $('#timerdiv').remove();
+}
+
+var x = setInterval(function() {
+
+// Get today's date and time
+var now = new Date().getTime();
+
+// Find the distance between now and the count down date
+var distance = countDownDate - now;
+
+// Time calculations for days, hours, minutes and seconds
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Display the result in the element with id="demo"
+document.getElementById("clock").innerHTML =  ''
+        + '<span class="h1 font-weight-bold">'+hours+'</span> Hr'
+        + '<span class="h1 font-weight-bold">'+minutes+'</span> Min'
+        + '<span class="h1 font-weight-bold">'+seconds+'</span> Sec' ;
+//days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+// If the count down is finished, write some text
+if (distance < 0) {
+
+clearInterval(x);
+location.reload();
+
+}
+}, 1000);
+
+});
+
+  </script>
 
 </body>
 
