@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #4154f1;
+  color: #012970;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -1783,8 +1783,8 @@ section {
   font-size: 14px;
 }
 
-.counts .count-box.c4154f1{
-  border-bottom: 3px solid #4154f1;
+.counts .count-box.c012970{
+  border-bottom: 3px solid #012970;
 }
 
 .counts .count-box.cee6c20{
