@@ -136,6 +136,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 #header.header-scrolled, #header.header-inner-pages {
   background: #fff;
@@ -501,7 +503,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .section-title h2 {
   font-size: 32px;
@@ -1136,6 +1138,116 @@ section {
   padding-left: 4px;
   padding-right: 4px;
 }
+
+
+
+/*--------------------------------------------------------------
+# Advisors
+--------------------------------------------------------------*/
+.advisors .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+.advisors .member .pic {
+  overflow: hidden;
+  width: 200px;
+  /* border-radius: 50%; */
+}
+.advisors .member .pic img {
+  transition: ease-in-out 0.3s;
+  /* height: 140px; */
+  /* width: 140px; */
+}
+.advisors .member:hover {
+  transform: translateY(-10px);
+}
+.advisors .member .member-info {
+  padding-left: 10px;
+}
+.advisors .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+.advisors .member span {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+.advisors .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+.advisors .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+.advisors .member .role {
+  font-weight: 600; 
+  color: #37517e;
+  letter-spacing: 1.4px; 
+  font-size: 15px;
+}
+.advisors .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.advisors .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+.advisors .member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+.advisors .member .social a:hover {
+  background: #47b2e4;
+}
+.advisors .member .social a:hover i {
+  color: #fff;
+}
+.advisors .member .social a + a {
+  margin-left: 8px;
+}
+
+
+
+.section-title-team {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.section-title-team h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  position: relative;
+  color: #37517e;
+}
+
+
 
 /*--------------------------------------------------------------
 # Pricing
