@@ -58,13 +58,40 @@
     .minheight63{
       min-height: 63px;
     }
+    
+  .s-marquee{
+    color: #012970;
+    background-color: #ffffff;
+  }
+  .s-button{
+    border: 1px solid #012970 ; 
+    color: #012970;
+  }
+  .s-button:hover{
+    color: #ffffff;
+    background-color: #012970;
+    border: 1px solid #012970 ; 
+
+    
+  }
   </style>
+
+
+
+
 </head>
 
 <body>
   <div id="maincontentsdiv">
     <header id="header" class="fixed-top whiteBackground" ></header>
     <!-- End Header -->
+
+    <div style="height: 80px;"></div>
+
+    <marquee class="s-marquee">
+      <p style="margin-bottom: 0px;letter-spacing: 1.2px;"> Successfully Completed 125 KW Solar PV Rooftop Power Plant and few other projects 500KW, 130 KW, 80 KW are under discussion.</p>
+    </marquee>
+
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
@@ -79,18 +106,35 @@
                 order-2 order-lg-1
               " data-aos="fade-up" data-aos-delay="200">
             <h1>Shubhitha S Energy Solutions</h1>
+            <div class="row" >
+              <div class="col-lg-4" style="margin-top: 4px;">
+                <a href="assets/pdf/ShubhithasEnergySolutions_BROUCHER1.pdf"   target="_blank" type="button" class="btn btn-outline-primary s-button"  >Download our Brochure 1</a>
+
+              </div>
+              
+              <div class="col-lg-4" style="margin-top: 4px;">
+                <a href="assets/pdf/ShubhithasEnergySolutions_BROUCHER2.pdf"   target="_blank" type="button" class="btn btn-outline-primary s-button"  >Download our Brochure 2</a>
+
+              </div>
+
+            </div>
+
           </div>
         </div>
       </div>
     </section>
     <!-- End Hero -->
 
+
+
+
+
     <main id="main">
       <!-- ======= Counts Section =======  -->
       <section id="counts" class="counts">
         <div class="container" data-aos="fade-up">
           <div class="row gy-4">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
               <div class="count-box c012970">
                 <i class="bi bi-cpu" style="color: #012970"></i>
                 <div>
@@ -101,7 +145,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
               <div class="count-box cee6c20">
                 <i class="bi bi-building" style="color: #ee6c20"></i>
                 <div>
@@ -112,7 +156,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-4 col-md-6">
               <div class="count-box c15be56">
                 <i class="bi bi-person" style="color: #15be56"></i>
                 <div>
@@ -123,16 +167,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box cbb0852">
-                <i class="bi bi-power" style="color: #bb0852"></i>
-                <div>
-                  <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
-                    class="purecounter" style="color: #bb0852"></span>
-                  <p>Units Generated</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -146,6 +181,7 @@
           </div>
 
           <div class="row gy-4">
+            
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div class="member topblue">
                 <div class="member-img">
@@ -216,6 +252,47 @@
 
                -->
           </div>
+
+          <div style="height: 24px;"></div>
+
+          <div class="row gy-4">
+
+            <div class="col-lg-2"></div>
+            
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="member topblue">
+                <div class="member-img">
+                  <img src="assets/img/SUBI/SolarFencing.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="member-info">
+                  <h4>Solar Fencing</h4>
+                  <a href="#services" class="read-more-global" ><span
+                      class="read-more-global-span" style="color: #37517e; font-weight: 600">Know More</span>
+                    <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="member topblue">
+                <div class="member-img">
+                  <img src="assets/img/SUBI/SolarWaterHeaters.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="member-info">
+                  <h4>Solar Water Heaters</h4>
+                  <a href="#services" class="read-more-global" ><span
+                      class="read-more-global-span" style="color: #37517e; font-weight: 600">Know More</span>
+                    <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2"></div>
+
+         
+
+          </div>
+
+
         </div>
       </section>
       <!-- End Team Section -->
@@ -238,10 +315,8 @@
 
                 <div class="service-box-text">
                   <h3>Industry</h3>
-                  <p>
-                    Provident nihil minus qui consequatur non omnis maiores.
-                  </p>
-                  <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                  
+                  <a href="#Applications" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -250,10 +325,8 @@
               <div class="service-box orange">
                 <img src="assets/img/applications/agriculture.jpg" class="img-fluid" alt="" />
                 <h3>Agriculture</h3>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores.
-                </p>
-                <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                
+                <a href="#Applications" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
 
@@ -261,10 +334,8 @@
               <div class="service-box green">
                 <img src="assets/img/applications/hospital1_300_300.jpg" class="img-fluid" alt="" />
                 <h3>Hospital</h3>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores.
-                </p>
-                <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                
+                <a href="#Applications" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
 
@@ -273,10 +344,8 @@
                 <img src="assets/img/applications/school0_300_300.jpg" class="img-fluid" alt="" />
 
                 <h3>School</h3>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores.
-                </p>
-                <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                
+                <a href="#Applications" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
 
@@ -284,10 +353,8 @@
               <div class="service-box orange">
                 <img src="assets/img/applications/house.jpg" class="img-fluid" alt="" />
                 <h3>Home</h3>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores.
-                </p>
-                <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+                
+                <a href="#Applications" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
 
@@ -295,10 +362,8 @@
               <div class="service-box green">
                 <img src="assets/img/applications/apartment.jpg" class="img-fluid" alt="" />
                 <h3>Apartment</h3>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores.
-                </p>
-                <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+               
+                <a href="#Applications" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -318,9 +383,37 @@
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/img/brochures/ShubhithasEnergySolutions120kw-1.jpg"
+                      alt="First slide" />
+                  </div>
+                  
+                  <div class="carousel-item ">
+                    <img class="d-block w-100" src="./assets/img/brochures/ShubhithasEnergySolutions120kw-2.jpg"
+                      alt="First slide" />
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block w-100" src="./assets/img/brochures/ShubhithasEnergySolutions120kw-3.jpg"
+                      alt="First slide" />
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block w-100" src="./assets/img/brochures/ShubhithasEnergySolutions120kw-4.jpg"
+                      alt="First slide" />
+                  </div>
+
+                  
+                  <div class="carousel-item ">
+                    <img class="d-block w-100" src="./assets/img/brochures/ShubhithasEnergySolutions12.jpg"
+                      alt="First slide" />
+                  </div>
+                 
+                  
+
+                  <div class="carousel-item ">
                     <img class="d-block w-100" src="./assets/img/brochures/ShubhithasEnergySolutions1.jpg"
                       alt="First slide" />
                   </div>
+                 
+
                   <div class="carousel-item">
                     <img class="d-block w-100" src="./assets/img/brochures/ShubhithasEnergySolutions2.jpg"
                       alt="First slide" />
@@ -602,7 +695,7 @@
                 <div class="row">
                   <div class="col d-flex justify-content-center pl-2">
                     <div class="pb-4">
-                      <div class="pic "><img src="assets/img/team/Vishwaja.jpg" class="img-fluid" alt=""></div>
+                      <div class="pic "><img src="assets/img/team/Vishwaja2.jpg" class="img-fluid" alt=""></div>
                     </div>
                   </div>
                 </div>
@@ -653,18 +746,18 @@
 
             <div class="col-lg-4 mb-4">
               <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                <!-- <div class="row">
+                <div class="row">
                   <div class="col d-flex justify-content-center pl-2">
                     <div class="pb-4">
-                      <div class="pic "><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                      <div class="pic "><img src="assets/img/team/Venkatesh-2.jpg" class="img-fluid" alt=""></div>
                     </div>
                   </div>
-                </div> -->
+                </div>
                 <div class="row">
                   <div class="col">
                     <div class="member-info">
                       <h4>Mr. B. Venkatesh</h4>
-                      <span>M. Tech Power Systems, JNTUH </span>
+                      <span>M. Tech Power Electronics, JNTUH </span>
                       <p class="role">Project Executive Engineer </p>
                       <p>Experience: 12 Years in the field of Solar and Bio -Mass power generation systems. </p>
 
@@ -676,13 +769,13 @@
 
             <div class="col-lg-4 mb-4">
               <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                <!-- <div class="row">
+                <div class="row">
                   <div class="col d-flex justify-content-center pl-2">
                     <div class="pb-4">
                       <div class="pic "><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
                     </div>
                   </div>
-                </div> -->
+                </div>
                 <div class="row">
                   <div class="col">
                     <div class="member-info">
